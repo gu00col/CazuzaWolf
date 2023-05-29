@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Cazuza Wolf</title>
+    <title>CazuzaWolf</title>
     <meta name="description"
         content='Descubra o mundo musical de CazuzaWolf, o projeto solo de Lucas Cazuza. Conheça os singles envolventes como "Penumbra", "Our Nature" e "Dawn", que marcaram o início dessa jornada musical em 2019. Emocione-se com as poderosas mensagens de amor próprio em "This one is for myself". Explore as energéticas faixas "Burn" e "Loving Someone", lançadas em 2022. Não perca o mais recente lançamento, "Northern Lights", uma canção que celebra o vínculo com sua irmã. Prepare-se para o futuro, pois Lucas está trabalhando em um novo e promissor EP. Conecte-se com a música autêntica de CazuzaWolf e acompanhe cada passo dessa emocionante jornada. Inscreva-se agora e não perca nenhuma novidade!'>
     <meta name="keywords"
@@ -71,6 +71,12 @@
             fill: #383838 !important;
         }
 
+        .flex-center {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
         .icones-box {
 
             width: 135.77px !important;
@@ -99,6 +105,20 @@
         #video-youtube {
             width: 100%;
             height: 800px;
+        }
+
+        /* Estilos para o loader */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
 
@@ -130,7 +150,7 @@
                 width: 30px !important;
                 /* height: 40px !important; */
                 fill: #CFCFCF !important;
-              
+
 
             }
 
@@ -139,7 +159,8 @@
                 -webkit-box-sizing: content-box !important;
                 box-sizing: content-box !important;
                 padding: 0 !important;
-                width: 50px !important; height: 51px !important;
+                width: 50px !important;
+                height: 51px !important;
             }
 
             .icones-box img {
@@ -158,8 +179,8 @@
     <header class="container-fluid">
         <div class="row ">
             <div class="col-mg-12 p-0">
-                <iframe id="video-youtube" width="100%" height="800px" src="https://www.youtube.com/embed/QHB-bkjobkU"
-                    title="YouTube video player" class="" frameborder="0"
+                <iframe id="video-youtube" width="100%" height="800px" src="" title="YouTube video player" class=""
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -168,19 +189,19 @@
     <nav class="container pt-md-5 pt-3 pb-3 pb-md-5 mt-md-4">
         <div class="row">
             <div class="col-md-4   text-center">
-                <a href="https://open.spotify.com/artist/7Km874EkhSmAqQocehvgvE?si=CBXFC4PlQoqYbrH_QZiO5w"
-                    class="btn btn-dark rounded-pill btn-lg  w-100 btn-nav">
-                    Ouça Cazuza Wolf
+                <a target='_blank' href="https://open.spotify.com/artist/7Km874EkhSmAqQocehvgvE?si=CBXFC4PlQoqYbrH_QZiO5w"
+                    class="btn btn-dark rounded-pill btn-lg  w-100 btn-nav fw-bold">
+                    Ouça CazuzaWolf
                 </a>
             </div>
             <div class="col-md-4  text-center">
-                <a href="https://www.youtube.com/channel/UCmWIueT4ArgqFV2MGyJK9hA"
-                    class="btn btn-dark rounded-pill btn-lg btn-nav  w-100">
+                <a target='_blank' href="https://www.youtube.com/channel/UCmWIueT4ArgqFV2MGyJK9hA"
+                    class="btn btn-dark rounded-pill btn-lg btn-nav  w-100 fw-bold">
                     Canal
                 </a>
             </div>
             <div class="col-md-4 text-center">
-                <a href="https://www.instagram.com/cazuzawolf/" class="btn btn-dark rounded-pill  btn-lg btn-nav w-100">
+                <a target='_blank' href="https://www.instagram.com/cazuzawolf/" class="btn btn-dark rounded-pill  btn-lg btn-nav w-100 fw-bold">
                     Contato
                 </a>
             </div>
@@ -189,38 +210,38 @@
 
     <section class="container pt-4 pb-4">
         <div class="row row-cols-5 row-cols-lg-5 g-2 g-lg-3">
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://open.spotify.com/artist/7Km874EkhSmAqQocehvgvE?si=CBXFC4PlQoqYbrH_QZiO5w"
+                    <a target='_blank' href="https://open.spotify.com/artist/7Km874EkhSmAqQocehvgvE?si=CBXFC4PlQoqYbrH_QZiO5w"
                         class="btn btn-dark icones-box"><i class="fa fa-spotify" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://www.instagram.com/cazuzawolf/" class="btn btn-dark icones-box"><i
+                    <a target='_blank' href="https://www.instagram.com/cazuzawolf/" class="btn btn-dark icones-box"><i
                             class="fa fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://twitter.com/CazuzaWolf" class="btn btn-dark icones-box"><i class="fa fa-twitter"
+                    <a target='_blank' href="https://twitter.com/CazuzaWolf" class="btn btn-dark icones-box"><i class="fa fa-twitter"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://www.facebook.com/CazuzaWolf/" class="btn btn-dark icones-box"><i
+                    <a target='_blank' href="https://www.facebook.com/CazuzaWolf/" class="btn btn-dark icones-box"><i
                             class="fa fa-facebook" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col">
-                <div class="p-3"><a href="https://music.apple.com/br/artist/cazuzawolf/1473148738"
+            <div class="col flex-center">
+                <div class="p-3"><a target='_blank' href="https://music.apple.com/br/artist/cazuzawolf/1473148738"
                         class="btn btn-dark icones-box"><i class="fa fa-apple" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://www.tiktok.com/@cazuzawolf_" class="btn btn-dark icones-box box-svg" style=""><svg
+                    <a target='_blank' href="https://www.tiktok.com/@cazuzawolf_" class="btn btn-dark icones-box box-svg" style=""><svg
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
                             <path
                                 d="M42.3333 9.4C40.0547 6.79874 38.799 3.45811 38.8 0H28.5V41.3333C28.4206 43.5701 27.4762 45.6887 25.8659 47.2431C24.2555 48.7975 22.1048 49.6663 19.8667 49.6667C15.1333 49.6667 11.2 45.8 11.2 41C11.2 35.2667 16.7333 30.9667 22.4333 32.7333V22.2C10.9333 20.6667 0.866669 29.6 0.866669 41C0.866669 52.1 10.0667 60 19.8333 60C30.3 60 38.8 51.5 38.8 41V20.0333C42.9767 23.0328 47.9912 24.6422 53.1333 24.6333V14.3333C53.1333 14.3333 46.8667 14.6333 42.3333 9.4Z" />
@@ -228,32 +249,33 @@
                     </a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://www.youtube.com/channel/UCmWIueT4ArgqFV2MGyJK9hA"
+                    <a target='_blank' href="https://www.youtube.com/channel/UCmWIueT4ArgqFV2MGyJK9hA"
                         class="btn btn-dark icones-box"><i class="fa fa-youtube " aria-hidden="true"></i></a>
                 </div>
             </div>
 
-            <div class="col ">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://www.deezer.com/br/artist/68403822" class="btn btn-dark icones-box box-svg" style=""><svg
-                            id="deezer" width="50" height="26" viewBox="0 0 50 20" xmlns="http://www.w3.org/2000/svg">
+                    <a target='_blank' href="https://www.deezer.com/br/artist/68403822" class="btn btn-dark icones-box box-svg"
+                        style=""><svg id="deezer" width="50" height="26" viewBox="0 0 50 20"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.833313 23.3578H9.62998V25.9243H0.833313V23.3578ZM0.833313 20.0204H9.62998V22.5869H0.833313V20.0204ZM0.833313 16.6854H9.62998V19.2519H0.833313V16.6854ZM0.833313 13.3504H9.62998V15.9169H0.833313V13.3504ZM0.833313 10.013H9.62998V12.5795H0.833313V10.013ZM10.6981 23.3578H19.4972V25.9243H10.6981V23.3578ZM10.6981 20.0204H19.4972V22.5869H10.6981V20.0204ZM10.6981 16.6854H19.4972V19.2519H10.6981V16.6854ZM20.563 23.3578H29.3621V25.9243H20.563V23.3578ZM20.563 20.0204H29.3621V22.5869H20.563V20.0204ZM20.563 16.6854H29.3621V19.2519H20.563V16.6854ZM20.563 13.3504H29.3621V15.9169H20.563V13.3504ZM20.563 10.013H29.3621V12.5795H20.563V10.013ZM20.563 6.67801H29.3621V9.24451H20.563V6.67801ZM20.563 3.34059H29.3621V5.90709H20.563V3.34059ZM30.4278 23.3578H39.2269V25.9243H30.4278V23.3578ZM30.4278 20.0204H39.2269V22.5869H30.4278V20.0204ZM30.4278 16.6854H39.2269V19.2519H30.4278V16.6854ZM30.4278 13.3504H39.2269V15.9169H30.4278V13.3504ZM30.4278 10.013H39.2269V12.5795H30.4278V10.013ZM40.2926 23.3578H49.0917V25.9243H40.2926V23.3578ZM40.2926 20.0204H49.0917V22.5869H40.2926V20.0204ZM40.2926 16.6854H49.0917V19.2519H40.2926V16.6854ZM40.2926 13.3504H49.0917V15.9169H40.2926V13.3504ZM40.2926 10.013H49.0917V12.5795H40.2926V10.013ZM40.2926 6.67801H49.0917V9.24451H40.2926V6.67801ZM40.2926 3.34059H49.0917V5.90709H40.2926V3.34059ZM40.2926 0.00317383H49.0917V2.56967H40.2926V0.00317383Z" />
                         </svg>
                     </a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://soundcloud.com/cazuzawolf" class="btn btn-dark icones-box"><i
+                    <a target='_blank' href="https://soundcloud.com/cazuzawolf" class="btn btn-dark icones-box"><i
                             class="fa fa-soundcloud" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col flex-center">
                 <div class="p-3">
-                    <a href="https://music.amazon.com.br/artists/B07TMKGM26/cazuzawolf"
+                    <a target='_blank' href="https://music.amazon.com.br/artists/B07TMKGM26/cazuzawolf"
                         class="btn btn-dark icones-box"><i class="fa fa-amazon" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -262,29 +284,77 @@
     <div class="container pt-4 pb-4">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>@2023 Cazuza Wolf<br>Design By <a href="https://www.instagram.com/peskgraphics/"
-                        class="text-dark fw-bold">@peskgraphics</a> and Code by<a href="http://outraforma.com.br"
+                <p>@2023 CazuzaWolf<br>Design By <a target='_blank' href="https://www.instagram.com/peskgraphics/"
+                        class="text-dark fw-bold">@peskgraphics</a> and Code by <a target='_blank' href="http://outraforma.com.br"
                         class="text-dark fw-bold">Outra Forma</a></p>
             </div>
         </div>
         <div class="row pb-5 pt-5 d-none">
             <div class="col-md-4 col-12 text-center">
-                <p><a href="http://outraforma.com.br" class="text-dark fw-bold">Cookies</a></p>
+                <p><a target='_blank' href="http://outraforma.com.br" class="text-dark fw-bold">Cookies</a></p>
             </div>
             <div class="col-md-4 col-6 text-center">
-                <p><a href="http://outraforma.com.br" class="text-dark fw-bold">Termos e Condições</a></p>
+                <p><a target='_blank' href="http://outraforma.com.br" class="text-dark fw-bold">Termos e Condições</a></p>
             </div>
             <div class="col-md-4 col-6 text-center ">
                 <Política href="http://outraforma.com.br" class="text-dark fw-bold">Política de Privacidade</a></p>
             </div>
         </div>
     </div>
+      <!-- Loader -->
+  <div class="loader">
+    <div class="spinner-border text-dark" role="status">
+      <span class="sr-only">Carregando...</span>
+    </div>
+  </div>
+
 
 
     <!-- MDB -->
     <script type="text/javascript" src="/static/js/mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url: "/api/youtube.php",
+            method: "GET",
+            success: function (response) {
+                // Manipule a resposta JSON aqui
+                const resultado_json = JSON.parse(response)
+                var iframe = $('#video-youtube');
+
+                // Define o novo endereço para o atributo src
+                var novoSrc = `https://www.youtube.com/embed/${resultado_json[0]['videoId']}`;
+
+                // Altera o atributo src do iframe para o novo endereço
+                iframe.attr('src', novoSrc);
+                $('.loader').fadeOut();
+                // ...
+            },
+            error: function (xhr, status, error) {
+                // Trate os erros aqui, se necessário
+                var iframe = $('#video-youtube');
+
+                // Define o novo endereço para o atributo src
+                var novoSrc = `https://www.youtube.com/embed/QHB-bkjobkU`;
+
+                // Altera o atributo src do iframe para o novo endereço
+                iframe.attr('src', novoSrc);
+                $('.loader').fadeOut();
+                console.log("Erro na solicitação: " + status + " - " + error);
+            }
+        });
+        
+     
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQ1TGQHZ7K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQ1TGQHZ7K');
+</script>
 </body>
 
 </html>
