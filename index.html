@@ -128,7 +128,7 @@
             /* Exemplo de estilos */
             #video-youtube {
                 width: 100% !important;
-                height: 400px !important;
+                height: 350px !important;
             }
 
             .btn-nav {
@@ -179,7 +179,7 @@
     <header class="container-fluid">
         <div class="row ">
             <div class="col-mg-12 p-0">
-                <iframe id="video-youtube" width="100%" height="800px" src="" title="YouTube video player" class=""
+                <iframe id="video-youtube"  src="" title="YouTube video player" class=""
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -289,25 +289,124 @@
                         class="text-dark fw-bold">Outra Forma</a></p>
             </div>
         </div>
-        <div class="row pb-5 pt-5 d-none">
+        <div class="row pb-5 pt-5">
             <div class="col-md-4 col-12 text-center">
-                <p><a target='_blank' href="http://outraforma.com.br" class="text-dark fw-bold">Cookies</a></p>
+                <p><a data-mdb-toggle="modal" data-mdb-target="#cookies"  class="text-dark fw-bold" style="cursor: pointer;">Cookies</a></p>
             </div>
             <div class="col-md-4 col-6 text-center">
-                <p><a target='_blank' href="http://outraforma.com.br" class="text-dark fw-bold">Termos e Condições</a></p>
+                <p><a data-mdb-toggle="modal" data-mdb-target="#termos_e_condicoes"  class="text-dark fw-bold">Termos e Condições</a></p>
             </div>
             <div class="col-md-4 col-6 text-center ">
-                <Política href="http://outraforma.com.br" class="text-dark fw-bold">Política de Privacidade</a></p>
+                <a data-mdb-toggle="modal" data-mdb-target="#politicas_de_privacidade"  class="text-dark fw-bold" class="text-dark fw-bold">Política de Privacidade</a></p>
             </div>
         </div>
     </div>
       <!-- Loader -->
-  <div class="loader">
+  <div class="loader d-none">
     <div class="spinner-border text-dark" role="status">
       <span class="sr-only">Carregando...</span>
     </div>
   </div>
+<!-- Modal cookies -->
+  <div class="modal frame fade bottom" id="cookies" tabindex="-1" aria-labelledby="cookies" style="display: none;" data-gtm-vis-first-on-screen-2340190_1302="15685" data-gtm-vis-total-visible-time-2340190_1302="100" data-gtm-vis-has-fired-2340190_1302="1" aria-hidden="true">
+    <div class="modal-dialog modal-frame modal-bottom">
+      <div class="modal-content rounded-0">
+        <div class="modal-body py-1">
+          <div class="d-flex justify-content-center align-items-center my-3">
+           <div class="text-center">
+            <p class="mb-0">Nós usamos cookies para melhorar a experiencia do site! Nenhum dado sensivel foi coletado.</p>
+            <br><button type="button" class="btn btn-dark btn-sm ms-2" data-mdb-dismiss="modal">
+              Ok, Obrigado.
+            </button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal termos e condições -->
+  <div class="modal" id="termos_e_condicoes" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Termos e Condições</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <h5 class='fs-5 fw-bold'>1. Aceitação dos Termos e Condições</h3>
+            <p>Ao acessar ou utilizar o site cazuzawolf.com, você concorda em cumprir integralmente estes Termos e Condições de Uso, bem como todas as leis e regulamentos aplicáveis. Se você não concordar com algum aspecto destes termos, por favor, não utilize o site.</p>
+        
+            <h5 class='fs-5 fw-bold'>2. Uso do Site</h3>
+            <p>O site cazuzawolf.com é um portfólio da carreira musical do proprietário, Cazuzawolf. Você está autorizado a navegar pelo site, visualizar o conteúdo, reproduzir e compartilhar informações não sensíveis disponibilizadas neste ambiente. No entanto, é estritamente proibido:</p>
+            <ul>
+              <li>Modificar, reproduzir, distribuir ou republicar qualquer conteúdo deste site sem autorização prévia por escrito;</li>
+              <li>Utilizar o site para qualquer finalidade ilegal ou não autorizada;</li>
+              <li>Acessar áreas restritas do site sem permissão.</li>
+            </ul>
+        
+            <h5 class='fs-5 fw-bold'>3. Propriedade Intelectual</h3>
+            <p>Todo o conteúdo presente no site cazuzawolf.com, incluindo textos, imagens, vídeos, logotipos e marcas registradas, são protegidos por direitos autorais e outros direitos de propriedade intelectual. Esses direitos são de propriedade exclusiva de Cazuzawolf ou de terceiros autorizados. É proibido copiar, reproduzir ou utilizar qualquer conteúdo sem autorização prévia por escrito.</p>
+        
+            <h5 class='fs-5 fw-bold'>4. Links para Sites de Terceiros</h3>
+            <p>O site cazuzawolf.com pode conter links para outros sites de terceiros. Esses links são fornecidos apenas como uma conveniência e não implicam em endosso ou responsabilidade pelo conteúdo desses sites. Recomendamos que você revise os Termos e Condições de Uso e a Política de Privacidade de qualquer site de terceiros que visitar.</p>
+        
+            <h5 class='fs-5 fw-bold'>5. Limitação de Responsabilidade</h3>
+            <p>O site cazuzawolf.com é disponibilizado "como está", sem garantias de qualquer tipo, expressas ou implícitas. O proprietário não se responsabiliza por danos diretos, indiretos, incidentais, consequenciais ou especiais decorrentes do uso ou incapacidade de uso do site.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal politica de privacidade -->
+   <div class="modal" id="politicas_de_privacidade" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Termos e Condições</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Ao utilizar o site cazuzawolf.com, você concorda com os termos desta Política de Privacidade. Esta política descreve como são coletadas, utilizadas, armazenadas e protegidas as informações pessoais dos usuários deste site. Recomendamos que você leia atentamente as informações a seguir.</p>
+
+            <h5 class='fs-5 fw-bold'>1. Coleta de Informações</h3>
+            <p>O site cazuzawolf.com coleta informações pessoais de forma voluntária e explícita, através de formulários de contato ou interações diretas com o usuário. As informações coletadas podem incluir, mas não estão limitadas a:</p>
+            <ul>
+              <li>Nome;</li>
+              <li>Endereço de e-mail;</li>
+              <li>Informações de contato;</li>
+              <li>Outras informações fornecidas pelo usuário.</li>
+            </ul>
+        
+            <h5 class='fs-5 fw-bold'>2. Uso das Informações</h3>
+            <p>As informações pessoais fornecidas pelos usuários do site cazuzawolf.com são utilizadas com a finalidade de:</p>
+            <ul>
+              <li>Responder a consultas ou solicitações;</li>
+              <li>Enviar informações relevantes sobre eventos, lançamentos ou atualizações;</li>
+              <li>Personalizar a experiência do usuário no site;</li>
+              <li>Realizar análises estatísticas e melhorar os serviços oferecidos.</li>
+            </ul>
+        
+            <h5 class='fs-5 fw-bold'>3. Compartilhamento de Informações</h3>
+            <p>O site cazuzawolf.com não compartilha, vende, aluga ou divulga informações pessoais de seus usuários para terceiros, exceto nos seguintes casos:</p>
+            <ul>
+              <li>Quando expressamente autorizado pelo usuário;</li>
+              <li>Quando necessário para cumprir com obrigações legais;</li>
+              <li>Quando necessário para proteger os direitos, propriedade ou segurança do site ou de terceiros.</li>
+            </ul>
+        
+            <h5 class='fs-5 fw-bold'>4. Armazenamento e Segurança</h3>
+            <p>O site cazuzawolf.com adota medidas de segurança adequadas para proteger as informações pessoais dos usuários contra acesso não autorizado, alteração, divulgação ou destruição. As informações são armazenadas de forma segura e são acessíveis apenas por pessoas autorizadas.</p>
+        
+            <h5 class='fs-5 fw-bold'>5. Cookies e Tecnologias de Rastreamento</h3>
+            <p>O site cazuzawolf.com utiliza cookies e tecnologias de rastreamento para melhorar a experiência do usuário. Essas tecnologias podem coletar informações não pessoais, como endereço IP, tipo de navegador, páginas visitadas e tempo de visita. Essas informações são utilizadas para análises estatísticas e não identificam individualmente os usuários.</p>
+        
+            <h5 class='fs-5 fw-bold'>6. Alterações na Política de Privacidade</h3>
+            <p>Esta Política de Privacidade pode ser atualizada periodicamente. Quaisquer alterações serão publicadas nesta página e a data de atualização será indicada. Recomendamos que você revise regularmente esta política para se manter informado sobre como suas informações pessoais são coletadas, utilizadas e protegidas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!-- MDB -->
